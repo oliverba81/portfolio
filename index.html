@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oliver Barthel – Portfolio</title>
+    <meta
+      name="description"
+      content="17 Projekte von Oliver Barthel – Demos, Stack und Architektur. Quellcode bleibt privat."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#0f1412" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Oliver Barthel – Portfolio" />
+    <meta
+      property="og:description"
+      content="17 Projekte – Demos, Stack und Architektur. Quellcode bleibt privat."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://project-showcase.apps.grok.bot/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#projekte">Zu den Projekten</a>
+
+    <header class="top">
+      <p class="brand">Oliver Barthel</p>
+      <nav aria-label="Hauptnavigation">
+        <a href="#projekte">Projekte</a>
+        <a href="#details">Details</a>
+        <a href="#ansatz">Ansatz</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Einstieg">
+        <div class="hero-media" aria-hidden="true">
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="assets/demos/hero.jpg"
+          >
+            <source src="assets/demos/hero.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-shade"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">17 Projekte · Showcase ohne Source</p>
+          <h1>Oliver Barthel</h1>
+          <p class="lede">
+            Full-Stack, Mobile, Tools und Spiele – von KI-Video-Pipelines bis
+            nativen Windows-/Android-Apps. Produktivcode bleibt privat; hier
+            siehst du Wirkung und Stack.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#projekte">Alle Projekte</a>
+            <a class="btn ghost" href="#kontakt">Kontakt</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projekte" class="section">
+        <div class="section-head">
+          <h2>Projekte</h2>
+          <p>
+            Übersicht aller Repos unter
+            <code>oliverba81</code>. Pro Karte: Sprache, Frameworks und
+            Plattform – Details mit voller Technologie-Info darunter.
+          </p>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Kategorien"></div>
+        <div class="project-cards" id="project-cards"></div>
+      </section>
+
+      <section id="featured" class="section project">
+        <div class="section-head">
+          <h2>AutomaticShorts</h2>
+          <p>
+            Flaggschiff: KI-Autopilot für Faceless-Shorts mit Qualitätskontrolle
+            und Freigabe vor dem Posten.
+          </p>
+        </div>
+        <div class="demo-grid" aria-label="Beispielausgaben">
+          <figure>
+            <img src="assets/demos/titanic.jpg" alt="Beispiel-Short: Titanic-Story" />
+            <figcaption>Story-Short</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/demos/wikinger.jpg" alt="Beispiel-Short: Wikinger" />
+            <figcaption>Historisches Preset</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/demos/werbeclip.jpg" alt="Beispiel-Short: Werbeclip" />
+            <figcaption>Produkt-Marketing</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/demos/chat-whatsapp.jpg" alt="Beispiel: Fake-Text Chat" />
+            <figcaption>Fake-Text / Chat</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/demos/musikvideo.jpg" alt="Beispiel: Musikvideo" />
+            <figcaption>Musikvideo</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/demos/dorf.jpg" alt="Beispiel: Dorf-Szene" />
+            <figcaption>Szenenstil</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="details" class="section">
+        <div class="section-head">
+          <h2>Details je Projekt</h2>
+          <p>Kurzbeschreibung, Stack und grobe Architektur – ohne Source.</p>
+        </div>
+        <div id="project-details"></div>
+      </section>
+
+      <section id="ansatz" class="section approach">
+        <div class="section-head">
+          <h2>So zeige ich Arbeit ohne Code</h2>
+          <p>
+            Private Repos bleiben privat. Vier aktuell öffentliche Tools können
+            für Recruiting ebenfalls auf privat gestellt werden – dieses
+            Portfolio ersetzt die öffentliche Source-Ansicht.
+          </p>
+        </div>
+        <ol class="steps">
+          <li>
+            <strong>Ein öffentliches Portfolio-Repo</strong>
+            <span>Nur READMEs, Demos und diese Seite – kein Produktcode.</span>
+          </li>
+          <li>
+            <strong>Profil-README</strong>
+            <span>Liste aller Projekte mit Links auf Showcases.</span>
+          </li>
+          <li>
+            <strong>Code nur im Gespräch</strong>
+            <span>Walkthrough oder temporärer Collaborator-Zugang.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section id="kontakt" class="section contact">
+        <div class="section-head">
+          <h2>Kontakt</h2>
+          <p>Für Deep-Dives zu einzelnen Projekten melde dich gerne.</p>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:kontakt@automaticshorts.cloud"
+            >E-Mail schreiben</a
+          >
+          <a
+            class="btn ghost"
+            href="https://github.com/oliverba81"
+            rel="noopener noreferrer"
+            target="_blank"
+            >GitHub-Profil</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>
+        © <span id="year"></span> Oliver Barthel · Showcase für 17 Projekte ·
+        Quellcode nicht öffentlich
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
