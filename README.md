@@ -31,7 +31,7 @@ Damit Arbeitgeber die Showcase direkt am Profil sehen:
 
 1. GitHub → **Settings → Profile** → Feld **Website** auf `https://project-showcase.apps.grok.bot` setzen.
 2. Optional: Repo-**About → Website** ebenfalls auf diese URL setzen.
-3. Nach Merge nach `main` aktiviert der Workflow **Deploy GitHub Pages** zusätzlich `https://oliverba81.github.io/portfolio/` (einmalig unter Settings → Pages freischalten, Source: GitHub Actions).
+3. Optional GitHub Pages: unter Repo **Settings → Pages** Source „Deploy from a branch“ → `main` / `/ (root)` – dann zusätzlich unter `https://oliverba81.github.io/portfolio/`.
 
 ## Kontakt
 
