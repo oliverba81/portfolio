@@ -1,0 +1,662 @@
+[
+  {
+    "id": "automaticshorts",
+    "name": "AutomaticShorts",
+    "visibility": "private",
+    "lang": "TypeScript",
+    "stack": [
+      "TypeScript",
+      "Next.js 16",
+      "React",
+      "Tailwind CSS 4",
+      "Remotion",
+      "Postgres"
+    ],
+    "category": "Produkt",
+    "summary": "KI-Autopilot für Faceless-Shorts auf YouTube, TikTok und Instagram – mit Qualitätskontrolle und Freigabe vor dem Posten (DACH).",
+    "highlights": [
+      "Pipeline: Skript → TTS → Bilder → Remotion-Render → Publish",
+      "Studio mit Serien, Kalender und Freigabe-Workflow",
+      "Mehrsprachige UI und BYOK-Preislinie"
+    ],
+    "arch": "Next.js App → Postgres → Video-Pipeline → YouTube/TikTok/Instagram",
+    "demo": true,
+    "tech": {
+      "language": "TypeScript",
+      "runtime": "Node.js 24 · Browser",
+      "platform": "Web (Next.js App Router)",
+      "frameworks": [
+        "Next.js 16",
+        "React",
+        "Tailwind CSS 4",
+        "Remotion"
+      ],
+      "data": [
+        "Postgres",
+        "lokaler Datei-Store (Dev)"
+      ],
+      "integrations": [
+        "OpenAI",
+        "ElevenLabs",
+        "YouTube OAuth",
+        "TikTok OAuth",
+        "Instagram Graph API"
+      ],
+      "concepts": [
+        "Server Actions / API Routes",
+        "i18n",
+        "AES-GCM Key Storage",
+        "Video-Pipeline"
+      ],
+      "blurb": "Full-Stack-Webapp: UI + Studio in Next.js/TypeScript, Video-Rendering mit Remotion, Persistenz in Postgres, externe KI- und Social-APIs."
+    }
+  },
+  {
+    "id": "scloud",
+    "name": "SCloud",
+    "visibility": "private",
+    "lang": "TypeScript",
+    "stack": [
+      "TypeScript",
+      "Cloud-Backend (Details privat)"
+    ],
+    "category": "Produkt",
+    "summary": "Cloud-/Web-Produkt in TypeScript (privates Repo). Details und Walkthrough auf Anfrage.",
+    "highlights": [
+      "Eigenes Produktrepo, aktiv in Entwicklung",
+      "Quellcode bewusst nicht öffentlich"
+    ],
+    "arch": "TypeScript-Anwendung · Architektur im Gespräch",
+    "tech": {
+      "language": "TypeScript",
+      "runtime": "Node.js · Browser",
+      "platform": "Web / Cloud-Service",
+      "frameworks": [
+        "TypeScript"
+      ],
+      "data": [
+        "Cloud-Backend (Details privat)"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Cloud-Architektur",
+        "API-Design"
+      ],
+      "blurb": "TypeScript-basiertes Cloud-/Web-Produkt. Konkrete Frameworks und Dienste im Walkthrough."
+    }
+  },
+  {
+    "id": "greyhound-support-tool",
+    "name": "Greyhound-Support-Tool",
+    "visibility": "private",
+    "lang": "TypeScript",
+    "stack": [
+      "TypeScript",
+      "Betriebsdaten (nicht öffentlich)"
+    ],
+    "category": "Tools",
+    "summary": "Internes Support-Werkzeug rund um GREYHOUND – TypeScript, privates Repo.",
+    "highlights": [
+      "Unterstützung von Support-/Betriebsabläufen",
+      "Kein öffentlicher Source (betriebsrelevant)"
+    ],
+    "arch": "TypeScript-Tooling · Details auf Anfrage",
+    "tech": {
+      "language": "TypeScript",
+      "runtime": "Node.js / Desktop-Web",
+      "platform": "Internes Support-Tool",
+      "frameworks": [
+        "TypeScript"
+      ],
+      "data": [
+        "Betriebsdaten (nicht öffentlich)"
+      ],
+      "integrations": [
+        "GREYHOUND-Ökosystem"
+      ],
+      "concepts": [
+        "Support-Automation",
+        "Tooling"
+      ],
+      "blurb": "TypeScript-Werkzeug für Support-/Betriebsabläufe im GREYHOUND-Umfeld."
+    }
+  },
+  {
+    "id": "greyhound-archive-db-repair-tool",
+    "name": "greyhound-archive-db-repair-tool",
+    "visibility": "public",
+    "lang": "Python",
+    "stack": [
+      "Python 3.10+",
+      "customtkinter",
+      "PyInstaller",
+      "SQLite (archive.db3)",
+      "FTS-Volltextindex"
+    ],
+    "category": "Tools",
+    "summary": "Repariert defekte GREYHOUND-archive.db3 und führt mehrere Archive verlustfrei zusammen. Windows-.exe mit Auto-Update.",
+    "highlights": [
+      "DB-Restore auch aus beschädigten SQLite-Dateien",
+      "Merge mehrerer Archive inkl. ID-Kollisionsauflösung",
+      "Backup vor jeder Aktion, Quellen unverändert"
+    ],
+    "arch": "Python-GUI → SQLite/FTS → neues Archiv (Kopie)",
+    "tech": {
+      "language": "Python 3.10+",
+      "runtime": "CPython (Windows)",
+      "platform": "Desktop (Windows) · Headless-CLI",
+      "frameworks": [
+        "customtkinter",
+        "PyInstaller"
+      ],
+      "data": [
+        "SQLite (archive.db3)",
+        "FTS-Volltextindex",
+        ".eml-Dateien"
+      ],
+      "integrations": [
+        "GitHub Releases (Auto-Update)"
+      ],
+      "concepts": [
+        "DB-Recovery",
+        "Archive-Merge",
+        "Backup-first"
+      ],
+      "blurb": "Python-Desktop-App: liest/repariert SQLite-Archive, baut FTS neu, merged Buckets verlustfrei; auslieferbar als Onefile-.exe."
+    }
+  },
+  {
+    "id": "website-scraper",
+    "name": "website-scraper",
+    "visibility": "public",
+    "lang": "Python",
+    "stack": [
+      "Python 3.10+",
+      "tkinter / Desktop-GUI",
+      "Markdown",
+      "XML"
+    ],
+    "category": "Tools",
+    "summary": "Desktop-Scraper: Webseiten und .eml als strukturiertes Markdown/XML/CSV – inkl. Sitemap-Modus und Bildbeschreibungen.",
+    "highlights": [
+      "Einzel-URL, Sitemap und EML-Verzeichnisse",
+      "Ausgabeformate konfigurierbar",
+      "Windows-Desktop-App mit Tracking der Läufe"
+    ],
+    "arch": "Python Desktop → Crawl/Parse → Dateiexport",
+    "tech": {
+      "language": "Python 3.10+",
+      "runtime": "CPython (Windows)",
+      "platform": "Desktop (Windows)",
+      "frameworks": [
+        "tkinter / Desktop-GUI"
+      ],
+      "data": [
+        "Markdown",
+        "XML",
+        "CSV",
+        "lokale Settings-JSON"
+      ],
+      "integrations": [
+        "Anthropic Claude (Bildbeschreibungen)",
+        "Sitemap/HTTP"
+      ],
+      "concepts": [
+        "Web-Scraping",
+        "EML-Parsing",
+        "Export-Pipelines"
+      ],
+      "blurb": "Einzeldatei-Python-App: crawlt URLs/Sitemaps/.eml, strukturiert Inhalte und exportiert konfigurierbare Formate."
+    }
+  },
+  {
+    "id": "remotedesktop",
+    "name": "RemoteDesktop",
+    "visibility": "public",
+    "lang": "C#",
+    "stack": [
+      "C#",
+      "WinForms",
+      "ASP-/Socket-Relay",
+      "DPAPI-gespeicherte Passwörter",
+      "Adressbuch"
+    ],
+    "category": "Tools",
+    "summary": "Selbst gehostete Windows-Fernsteuerung über Relay (ohne Port-Forwarding), Ende-zu-Ende verschlüsselt.",
+    "highlights": [
+      "Viewer + Host + Relay als Synology-Paket",
+      "ECDH + AES-256-GCM, Relay blind",
+      "Zwischenablage und Dateitransfer"
+    ],
+    "arch": "Viewer/Host (ausgehend) → Relay → E2E-Tunnel",
+    "tech": {
+      "language": "C#",
+      "runtime": ".NET 8",
+      "platform": "Windows (Host/Viewer) · Linux/NAS (Relay)",
+      "frameworks": [
+        "WinForms",
+        "ASP-/Socket-Relay"
+      ],
+      "data": [
+        "DPAPI-gespeicherte Passwörter",
+        "Adressbuch"
+      ],
+      "integrations": [
+        "Synology-Paket (.spk)",
+        "TCP-Relay"
+      ],
+      "concepts": [
+        "ECDH P-256",
+        "AES-256-GCM",
+        "HKDF",
+        "Argon2id",
+        "NAT-Traversal via Relay"
+      ],
+      "blurb": "Vier .NET-8-Projekte (Shared/Relay/Host/Viewer): E2E-verschlüsselte Fernsteuerung ohne Client-Portforwarding."
+    }
+  },
+  {
+    "id": "wysiwyg-editor",
+    "name": "WYSIWYG-Editor",
+    "visibility": "public",
+    "lang": "TypeScript",
+    "stack": [
+      "TypeScript",
+      "React 18",
+      "Next.js (optional)",
+      "HTML-Dokumentmodell im Editor"
+    ],
+    "category": "Bibliothek",
+    "summary": "Vanilla-Editor-Klasse plus optionalem React-Wrapper für Next.js – controlled/uncontrolled, IME-sicher, sanitize.",
+    "highlights": [
+      "Core ohne Framework-Zwang",
+      "React-Wrapper mit Debounce, focusTrigger, ref-API",
+      "Paste-Sanitize und optionales Image-Upload"
+    ],
+    "arch": "Editor-Core → optional React-Wrapper → Host-App",
+    "tech": {
+      "language": "TypeScript",
+      "runtime": "Browser",
+      "platform": "Library (Vanilla + React)",
+      "frameworks": [
+        "React 18",
+        "Next.js (optional)"
+      ],
+      "data": [
+        "HTML-Dokumentmodell im Editor"
+      ],
+      "integrations": [
+        "optionales Image-Upload"
+      ],
+      "concepts": [
+        "contentEditable-Core",
+        "controlled/uncontrolled",
+        "IME/Composition",
+        "Sanitize"
+      ],
+      "blurb": "Framework-armer Editor-Core in TypeScript plus React-Wrapper mit Debounce, Ref-API und Next.js-tauglichem Import."
+    }
+  },
+  {
+    "id": "wochenplaner",
+    "name": "Wochenplaner",
+    "visibility": "private",
+    "lang": "TypeScript",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Firebase (Auth/Datenbank)"
+    ],
+    "category": "Apps",
+    "summary": "React-App mit TypeScript und Firebase für die Wochenplanung.",
+    "highlights": [
+      "Wochenübersicht und Planung",
+      "Firebase als Backend"
+    ],
+    "arch": "React SPA → Firebase (Auth/Daten)",
+    "tech": {
+      "language": "TypeScript",
+      "runtime": "Browser",
+      "platform": "Web-SPA",
+      "frameworks": [
+        "React",
+        "TypeScript"
+      ],
+      "data": [
+        "Firebase (Auth/Datenbank)"
+      ],
+      "integrations": [
+        "Firebase"
+      ],
+      "concepts": [
+        "Client-State",
+        "Cloud-Backend-as-a-Service"
+      ],
+      "blurb": "React/TypeScript-Frontend mit Firebase für Auth und persistente Wochenplanung."
+    }
+  },
+  {
+    "id": "freundeapp",
+    "name": "freundeapp",
+    "visibility": "private",
+    "lang": "TypeScript",
+    "stack": [
+      "TypeScript",
+      "React",
+      "App-State + Backend (privat)"
+    ],
+    "category": "Apps",
+    "summary": "FreundeApp – React-App für Freunde mit Kalender, Chat und Listen.",
+    "highlights": [
+      "Kalender, Chat und gemeinsame Listen",
+      "Privates Produktrepo"
+    ],
+    "arch": "React-App · Backend-Details auf Anfrage",
+    "tech": {
+      "language": "TypeScript",
+      "runtime": "Browser",
+      "platform": "Web-SPA",
+      "frameworks": [
+        "React",
+        "TypeScript"
+      ],
+      "data": [
+        "App-State + Backend (privat)"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Kalender-UI",
+        "Chat",
+        "Listen/CRUD"
+      ],
+      "blurb": "React/TypeScript-App mit Kalender-, Chat- und Listen-Features für Freundeskreise."
+    }
+  },
+  {
+    "id": "familien-herz-zeit",
+    "name": "familien-herz-zeit",
+    "visibility": "private",
+    "lang": "TypeScript",
+    "stack": [
+      "TypeScript",
+      "App-Daten (privat)"
+    ],
+    "category": "Apps",
+    "summary": "Familien-/Zeit-App in TypeScript (privates Repo).",
+    "highlights": [
+      "Fokus auf Familie und gemeinsame Zeit",
+      "Quellcode nicht öffentlich"
+    ],
+    "arch": "TypeScript-App · Walkthrough auf Anfrage",
+    "tech": {
+      "language": "TypeScript",
+      "runtime": "Browser / App-Runtime",
+      "platform": "Web/App (TypeScript)",
+      "frameworks": [
+        "TypeScript"
+      ],
+      "data": [
+        "App-Daten (privat)"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Familien-UX",
+        "Zeitplanung"
+      ],
+      "blurb": "TypeScript-Anwendung mit Fokus auf Familie und gemeinsame Zeit – Stack-Details im Gespräch."
+    }
+  },
+  {
+    "id": "autovideo",
+    "name": "AutoVideo",
+    "visibility": "private",
+    "lang": "Kotlin",
+    "stack": [
+      "Kotlin",
+      "Android SDK",
+      "Lokale/App-Daten (privat)"
+    ],
+    "category": "Mobile",
+    "summary": "Android-/Kotlin-Projekt rund um Video-Automation bzw. Video-Workflows.",
+    "highlights": [
+      "Native Kotlin-Umsetzung",
+      "Privates Repo"
+    ],
+    "arch": "Kotlin (Android) · Details im Gespräch",
+    "tech": {
+      "language": "Kotlin",
+      "runtime": "JVM / Android Runtime",
+      "platform": "Android",
+      "frameworks": [
+        "Android SDK",
+        "Kotlin"
+      ],
+      "data": [
+        "Lokale/App-Daten (privat)"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Native Android",
+        "Video-Workflows"
+      ],
+      "blurb": "Native Android-App in Kotlin rund um Video-Automation bzw. Video-Workflows."
+    }
+  },
+  {
+    "id": "aussaatkalender",
+    "name": "Aussaatkalender",
+    "visibility": "private",
+    "lang": "Kotlin",
+    "stack": [
+      "Kotlin",
+      "Android SDK",
+      "Lokale Kalender-/Pflanzdaten"
+    ],
+    "category": "Mobile",
+    "summary": "Aussaatkalender als Kotlin-/Android-App.",
+    "highlights": [
+      "Garten-/Aussaat-Planung mobil",
+      "Natives Android"
+    ],
+    "arch": "Kotlin Android-App",
+    "tech": {
+      "language": "Kotlin",
+      "runtime": "Android Runtime",
+      "platform": "Android",
+      "frameworks": [
+        "Android SDK",
+        "Kotlin"
+      ],
+      "data": [
+        "Lokale Kalender-/Pflanzdaten"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Kalender-UI",
+        "Domain-Modell Garten"
+      ],
+      "blurb": "Native Kotlin-Android-App zur Aussaat- und Gartenplanung."
+    }
+  },
+  {
+    "id": "tabletennisscoreboard",
+    "name": "TableTennisScoreBoard",
+    "visibility": "private",
+    "lang": "Kotlin",
+    "stack": [
+      "Kotlin",
+      "Android SDK",
+      "Match-/Score-State"
+    ],
+    "category": "Mobile",
+    "summary": "Tischtennis-Scoreboard in Kotlin.",
+    "highlights": [
+      "Spielstand und Match-UI",
+      "Mobile First"
+    ],
+    "arch": "Kotlin Android-App",
+    "tech": {
+      "language": "Kotlin",
+      "runtime": "Android Runtime",
+      "platform": "Android",
+      "frameworks": [
+        "Android SDK",
+        "Kotlin"
+      ],
+      "data": [
+        "Match-/Score-State"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Realtime-UI",
+        "Sport-Scoreboard"
+      ],
+      "blurb": "Kotlin-Android-Scoreboard für Tischtennis-Matches."
+    }
+  },
+  {
+    "id": "time-stop-challange",
+    "name": "Time-Stop-Challange",
+    "visibility": "private",
+    "lang": "Kotlin",
+    "stack": [
+      "Kotlin",
+      "Android SDK",
+      "Spielstand / Highscores (lokal)"
+    ],
+    "category": "Spiele",
+    "summary": "Zeit-/Challenge-Spiel in Kotlin (Android).",
+    "highlights": [
+      "Spielmechanik rund um Timing",
+      "Privates Repo"
+    ],
+    "arch": "Kotlin Game/App",
+    "tech": {
+      "language": "Kotlin",
+      "runtime": "Android Runtime",
+      "platform": "Android",
+      "frameworks": [
+        "Android SDK",
+        "Kotlin"
+      ],
+      "data": [
+        "Spielstand / Highscores (lokal)"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Game Loop",
+        "Timing-Mechanik"
+      ],
+      "blurb": "Android-Spiel in Kotlin mit Timing-/Challenge-Mechanik."
+    }
+  },
+  {
+    "id": "wuerfelapp",
+    "name": "WuerfelApp",
+    "visibility": "private",
+    "lang": "Dart",
+    "stack": [
+      "Dart",
+      "Flutter",
+      "Lokaler App-State"
+    ],
+    "category": "Mobile",
+    "summary": "Würfel-App mit Dart/Flutter.",
+    "highlights": [
+      "Cross-Platform mit Flutter",
+      "Kompaktes Utility-Spiel"
+    ],
+    "arch": "Flutter (Dart)",
+    "tech": {
+      "language": "Dart",
+      "runtime": "Flutter Engine",
+      "platform": "iOS / Android (Flutter)",
+      "frameworks": [
+        "Flutter",
+        "Dart"
+      ],
+      "data": [
+        "Lokaler App-State"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Cross-Platform UI",
+        "Animation"
+      ],
+      "blurb": "Cross-Platform-Würfel-App mit Flutter/Dart."
+    }
+  },
+  {
+    "id": "autorennen",
+    "name": "Autorennen",
+    "visibility": "private",
+    "lang": "GDScript",
+    "stack": [
+      "GDScript",
+      "Godot",
+      "Szenen / Game State"
+    ],
+    "category": "Spiele",
+    "summary": "Rennspiel in Godot (GDScript).",
+    "highlights": [
+      "Eigenes Gameplay in Godot",
+      "Privates Repo"
+    ],
+    "arch": "Godot → GDScript",
+    "tech": {
+      "language": "GDScript",
+      "runtime": "Godot Engine",
+      "platform": "Godot (Desktop/Export)",
+      "frameworks": [
+        "Godot",
+        "GDScript"
+      ],
+      "data": [
+        "Szenen / Game State"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Game Scenes",
+        "Physics/Input",
+        "Racing Gameplay"
+      ],
+      "blurb": "Rennspiel auf der Godot Engine, Logik in GDScript."
+    }
+  },
+  {
+    "id": "audiomerge",
+    "name": "AudioMerge",
+    "visibility": "private",
+    "lang": "C++",
+    "stack": [
+      "C++",
+      "C++ Standard Library",
+      "Audio-Dateien"
+    ],
+    "category": "Tools",
+    "summary": "Audio-Zusammenführung / Merge-Tool in C++.",
+    "highlights": [
+      "Native Performance",
+      "Fokus auf Audio-Verarbeitung"
+    ],
+    "arch": "C++ Tooling",
+    "tech": {
+      "language": "C++",
+      "runtime": "Native (compiled)",
+      "platform": "Desktop / CLI (native)",
+      "frameworks": [
+        "C++ Standard Library"
+      ],
+      "data": [
+        "Audio-Dateien"
+      ],
+      "integrations": [],
+      "concepts": [
+        "Native Performance",
+        "Audio-Processing",
+        "File I/O"
+      ],
+      "blurb": "Natives C++-Tool zum Zusammenführen/Verarbeiten von Audio-Dateien."
+    }
+  }
+]
