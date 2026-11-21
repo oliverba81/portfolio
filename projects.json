@@ -15,6 +15,7 @@
     "category": "Produkt",
     "summary": "KI-Autopilot für Faceless-Shorts auf YouTube, TikTok und Instagram – mit Qualitätskontrolle und Freigabe vor dem Posten (DACH).",
     "highlights": [
+      "Live-Produkt öffentlich erreichbar (Link in der Showcase-Sektion)",
       "Pipeline: Skript → TTS → Bilder → Remotion-Render → Publish",
       "Studio mit Serien, Kalender und Freigabe-Workflow",
       "Mehrsprachige UI und BYOK-Preislinie"
@@ -49,7 +50,9 @@
         "Video-Pipeline"
       ],
       "blurb": "Full-Stack-Webapp: UI + Studio in Next.js/TypeScript, Video-Rendering mit Remotion, Persistenz in Postgres, externe KI- und Social-APIs."
-    }
+    },
+    "liveHost": "www.automaticshorts.cloud",
+    "livePath": "/de"
   },
   {
     "id": "scloud",

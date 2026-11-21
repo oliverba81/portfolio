@@ -2,6 +2,10 @@
 
 **KI-Autopilot für Faceless-Shorts auf YouTube, TikTok und Instagram – mit Qualitätskontrolle und Freigabe vor dem Posten (DACH).**
 
+**Live:** [www.automaticshorts.cloud/de](https://www.automaticshorts.cloud/de) <!-- pragma: allowlist secret -->
+
+Produkt-Screenshots der echten UI liegen unter `assets/demos/automaticshorts/` (Landing, Galerie, Features, Pricing).
+
 ## Technologie
 
 Full-Stack-Webapp: UI + Studio in Next.js/TypeScript, Video-Rendering mit Remotion, Persistenz in Postgres, externe KI- und Social-APIs.
