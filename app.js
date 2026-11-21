@@ -19,37 +19,6 @@
     else requestAnimationFrame(() => hero.classList.add("in"));
   }
 
-  const demoVideos = [...document.querySelectorAll(".demo-video")];
-  const stopOthers = (current) => {
-    demoVideos.forEach((vid) => {
-      if (vid === current) return;
-      vid.pause();
-      vid.currentTime = 0;
-      vid.closest(".video-card")?.classList.remove("is-playing");
-    });
-  };
-  demoVideos.forEach((vid) => {
-    const card = vid.closest(".video-card");
-    if (!card) return;
-    const play = () => {
-      stopOthers(vid);
-      card.classList.add("is-playing");
-      vid.play().catch(() => {});
-    };
-    const pause = () => {
-      vid.pause();
-      card.classList.remove("is-playing");
-    };
-    card.addEventListener("mouseenter", () => {
-      if (!reduce) play();
-    });
-    card.addEventListener("mouseleave", pause);
-    card.addEventListener("click", () => {
-      if (vid.paused) play();
-      else pause();
-    });
-  });
-
   const cardsEl = document.getElementById("project-cards");
   const filtersEl = document.getElementById("filters");
   const detailsEl = document.getElementById("project-details");
