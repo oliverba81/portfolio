@@ -90,9 +90,10 @@
             Qualitätskontrolle, Serien und Freigabe vor dem Posten (DACH).
           </p>
           <p class="featured-live">
+            <!-- Live product URL for employers; pragma: allowlist secret -->
             <a
               class="btn primary"
-              href="https://www.automaticshorts.cloud/de"  <!-- pragma: allowlist secret -->
+              href="https://www.automaticshorts.cloud/de"
               rel="noopener noreferrer"
               target="_blank"
               >Live-Produkt öffnen</a
@@ -105,68 +106,97 @@
             src="assets/demos/automaticshorts/hero-landing.jpg"
             alt="AutomaticShorts Landingpage: Hero mit Prompt und Video-Preview"
           />
-          <figcaption>Produkt-UI · Landing &amp; Einstieg</figcaption>
+          <figcaption>1 · Landing &amp; Einstieg</figcaption>
         </figure>
 
-        <div class="product-shots" aria-label="Produkt-Screenshots">
+        <div class="product-shots" aria-label="Produkt-Sektionen">
           <figure>
             <img
               src="assets/demos/automaticshorts/gallery.jpg"
-              alt="AutomaticShorts: Galerie mit Beispiel-Shorts"
+              alt="Sektion: Echte Videos mit AutomaticShorts erstellt"
             />
-            <figcaption>Beispiel-Galerie</figcaption>
+            <figcaption>2 · Beispiel-Galerie</figcaption>
           </figure>
           <figure>
             <img
-              src="assets/demos/automaticshorts/features.jpg"
-              alt="AutomaticShorts: Feature-Übersicht"
+              src="assets/demos/automaticshorts/howto.jpg"
+              alt="Sektion: In drei Schritten zum Kanal auf Autopilot"
             />
-            <figcaption>Features &amp; Qualitätskontrolle</figcaption>
+            <figcaption>3 · So funktioniert’s</figcaption>
           </figure>
           <figure>
             <img
-              src="assets/demos/automaticshorts/value.jpg"
-              alt="AutomaticShorts: Kostenvergleich"
+              src="assets/demos/automaticshorts/formats.jpg"
+              alt="Sektion: Formate die funktionieren"
             />
-            <figcaption>Wertversprechen</figcaption>
+            <figcaption>4 · Formate</figcaption>
           </figure>
           <figure>
             <img
               src="assets/demos/automaticshorts/pricing.jpg"
-              alt="AutomaticShorts: Preispläne"
+              alt="Sektion: Faire Preise nach Videos"
             />
-            <figcaption>Pricing</figcaption>
+            <figcaption>5 · Pricing</figcaption>
           </figure>
         </div>
 
         <div class="section-head outputs-head">
-          <h3>Beispiel-Outputs</h3>
-          <p>Gerenderte Shorts aus der Pipeline – nicht nur UI-Mockups.</p>
+          <h3>Drei gerenderte Beispielvideos</h3>
+          <p>
+            Echtes Pipeline-Output – tippen oder hovern zum Abspielen (stumm).
+          </p>
         </div>
-        <div class="demo-grid" aria-label="Beispielausgaben">
-          <figure>
-            <img src="assets/demos/titanic.jpg" alt="Beispiel-Short: Titanic-Story" />
-            <figcaption>Story-Short</figcaption>
+        <div class="video-grid" aria-label="Beispielvideos">
+          <figure class="video-card">
+            <video
+              class="demo-video"
+              playsinline
+              muted
+              loop
+              preload="metadata"
+              poster="assets/demos/automaticshorts/videos/titanic.jpg"
+              data-label="Story"
+            >
+              <source
+                src="assets/demos/automaticshorts/videos/titanic.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <figcaption>Story · Titanic</figcaption>
           </figure>
-          <figure>
-            <img src="assets/demos/wikinger.jpg" alt="Beispiel-Short: Wikinger" />
-            <figcaption>Historisches Preset</figcaption>
+          <figure class="video-card">
+            <video
+              class="demo-video"
+              playsinline
+              muted
+              loop
+              preload="metadata"
+              poster="assets/demos/automaticshorts/videos/werbeclip.jpg"
+              data-label="Werbeclip"
+            >
+              <source
+                src="assets/demos/automaticshorts/videos/werbeclip.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <figcaption>Werbeclip · Produkt</figcaption>
           </figure>
-          <figure>
-            <img src="assets/demos/werbeclip.jpg" alt="Beispiel-Short: Werbeclip" />
-            <figcaption>Produkt-Marketing</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/demos/chat-whatsapp.jpg" alt="Beispiel: Fake-Text Chat" />
-            <figcaption>Fake-Text / Chat</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/demos/musikvideo.jpg" alt="Beispiel: Musikvideo" />
-            <figcaption>Musikvideo</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/demos/dorf.jpg" alt="Beispiel: Dorf-Szene" />
-            <figcaption>Szenenstil</figcaption>
+          <figure class="video-card">
+            <video
+              class="demo-video"
+              playsinline
+              muted
+              loop
+              preload="metadata"
+              poster="assets/demos/automaticshorts/videos/chat-whatsapp.jpg"
+              data-label="Fake Text"
+            >
+              <source
+                src="assets/demos/automaticshorts/videos/chat-whatsapp.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <figcaption>Fake Text · Chat</figcaption>
           </figure>
         </div>
       </section>
