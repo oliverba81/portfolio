@@ -126,7 +126,18 @@
           ${techPanel(p)}
           <ul class="bullets">${highlights}</ul>
           <pre class="arch" tabindex="0">${escapeHtml(p.arch)}</pre>
-          <p class="note"><a href="projects/${escapeHtml(p.id)}/README.md">Showcase-README</a></p>
+          <p class="note">
+            ${(() => {
+              const live =
+                p.liveUrl ||
+                (p.liveHost && p.livePath
+                  ? `https://${p.liveHost}${p.livePath}`
+                  : "");
+              return live
+                ? `<a href="${escapeHtml(live)}" rel="noopener noreferrer" target="_blank">Live-Produkt</a> · `
+                : "";
+            })()}<a href="projects/${escapeHtml(p.id)}/README.md">Showcase-README</a>
+          </p>
         </article>`;
       })
       .join("");

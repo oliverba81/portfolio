@@ -8,7 +8,7 @@
 
 - 17 Projekte (Full-Stack, Mobile, Tools, Spiele)
 - Kurzbeschreibungen, Tech-Stack und grobe Architektur
-- Demo-Material zum Flaggschiff **AutomaticShorts**
+- Produkt-Screenshots und Demo-Material zum Flaggschiff **AutomaticShorts** ([Live](https://www.automaticshorts.cloud/de))  <!-- pragma: allowlist secret -->
 - Kein Produktivcode – Deep-Dives auf Anfrage
 
 ## Schnellstart lokal
