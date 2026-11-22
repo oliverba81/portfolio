@@ -15,7 +15,7 @@
 
 # Oliver Barthel – Portfolio
 
-Softwareentwickler mit Diplom in Wirtschaftsinformatik (FH Mittweida). Über 15 Jahre produktnahe IT: C#, Web, SQL, Schnittstellen, Automatisierung und KI-Workflows – von Full-Stack- und Desktop-Tools bis Mobile.
+Softwareentwickler mit Diplom in Wirtschaftsinformatik (FH). Über 15 Jahre produktnahe IT: C#, Web, SQL, Schnittstellen, Automatisierung und KI-Workflows – von Full-Stack- und Desktop-Tools bis Mobile.
 
 Öffentliche Showcase-Seite für Arbeitgeber und Recruiter. Quellcode bleibt privat.
 
