@@ -1,6 +1,24 @@
 # Biografie – Oliver Barthel (Softwareentwicklung)
 
-## Kurzfassung (GitHub / LinkedIn / About)
+## Profilbeschreibung (GitHub, max. 160 Zeichen)
+
+```
+Softwareentwickler · 15+ Jahre produktnahe IT (C#, Web, SQL, Automatisierung, KI). → project-showcase.apps.grok.bot
+```
+
+(115 Zeichen – passt in die GitHub-Bio unter Public profile → Bio.)
+
+Alternativen:
+
+```
+Softwareentwickler · C# · Web · SQL · Schnittstellen · KI · 15+ Jahre Praxis · project-showcase.apps.grok.bot
+```
+
+```
+Softwareentwickler · Diplom Wirtschaftsinformatik · C#, Web, SQL, ERP/JTL, KI · project-showcase.apps.grok.bot
+```
+
+## Kurzfassung (LinkedIn / About / README)
 
 Softwareentwickler und digitaler Commerce-IT-Experte mit Diplom in Wirtschaftsinformatik (FH Mittweida). Seit über 15 Jahren baue und betreibe ich produktive Systeme an der Schnittstelle von Warenwirtschaft, Onlinehandel und Automatisierung — von C#-Hilfsprogrammen und Schnittstellen bis zu Webshops, Desktop-Tools und KI-gestützten Workflows. Teamleitung in Support & Softwareentwicklung, praxisnah, eigenverantwortlich, mit Fokus auf stabile Integrationen und messbare Prozessverbesserung.
 
